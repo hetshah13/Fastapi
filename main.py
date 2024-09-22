@@ -19,9 +19,8 @@ def index():
     return{'Message':'Hello Het'}
 
 @app.get('/welcome')
-def get_name(name: str, degree: str):
-    return {'Welcome To This Repo ' f'{name}'
-            ' Your Highest Qualification ' f'{degree}'}
+def get_name(name: str):
+    return {'Welcome To This Web Page ' f'{name}'}
 
 
 # Run the API with uvicorn
