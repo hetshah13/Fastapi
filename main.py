@@ -10,6 +10,7 @@ we have create virtual environment: myenv
 # Libraries
 import uvicorn # for ASGI
 from fastapi import FastAPI
+from Banknotes import BankNote
 import pickle
 import pandas as pd
 
@@ -28,8 +29,19 @@ def get_name(name: str):
     return {'Welcome To This Web Page ' f'{name}'}
 
 @app.post('/predict')
-def predict_note(data:Banknote):
+def predict_note(data:BankNote):
     data = data.dict()
+    variance = data['variance']
+    skewness = data['skewness']
+    curtosis = data['curtosis']
+    entropy  = data['entropy']
+
+    prediction = classifier.predict([[variance,skewness,curtosis,entropy]])
+    if (prediction[0] > 0.5):
+        prediction = "Fake Note"
+    else:
+        prediction ="Its a Bank Note"
+    return {'prediction' : prediction}
 
 # Run the API with uvicorn
 # It will run on http://127.0.0.1:8000
