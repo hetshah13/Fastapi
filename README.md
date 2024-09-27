@@ -1,4 +1,4 @@
-## Bank Note Authentication Using FastAPI
+# Bank Note Authentication Using FastAPI
 
 This project demonstrates a Bank Note Authentication system using FastAPI and a machine learning model to classify banknotes as genuine or counterfeit based on their characteristics.
 
@@ -12,4 +12,15 @@ The dataset used for training the machine learning model consists of various cha
 
 These features are fed into a classification model to predict whether the banknote is real or fake.
 
-Project hosted [Link](https://fastapi-niedaqrjy-het-shahs-projects-42ee3146.vercel.app)
+## API Endpoints
+### 1. /predict
+**Method: POST**
+  This endpoint accepts banknote features and returns whether the banknote is genuine or counterfeit.
+
+### 2. /
+**Method: GET**
+  A simple root endpoint that returns a welcome message.
+
+
+
+[Checkout Website](https://fastapi-niedaqrjy-het-shahs-projects-42ee3146.vercel.app)
