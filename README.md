@@ -1,6 +1,6 @@
 # Bank Note Authentication Using FastAPI
 
-This project demonstrates a Bank Note Authentication system using FastAPI and a machine learning model to classify banknotes as genuine or counterfeit based on their characteristics.
+This project Bank Note Authentication system using FastAPI and a machine learning model to classify banknotes as genuine or counterfeit based on their characteristics.
 
 ### Dataset
 The dataset used for training the machine learning model consists of various characteristics of banknotes such as:
