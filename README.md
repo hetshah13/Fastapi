@@ -23,14 +23,15 @@ These features are fed into a classification model to predict whether the bankno
 
 ## Getting Started
 **1. Clone the repository**
- 
+ ```
  git clone https://github.com/hetshah13/Fastapi.git
- 
  cd Fastapi
+```
  
 **2. Install dependencies**
-  
+  ```
   pip install -r requirements.txt
+```
   
 
 
