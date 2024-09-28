@@ -13,15 +13,18 @@ The dataset used for training the machine learning model consists of various cha
 These features are fed into a classification model to predict whether the banknote is real or fake.
 
 ## API Endpoints
-### 1. /predict
+
+#### 1. /predict
 **Method: POST**
   This endpoint accepts banknote features and returns whether the banknote is genuine or counterfeit.
 
-### 2. /
+#### 2. /
 **Method: GET**
   A simple root endpoint that returns a welcome message.
 
+
 ## Getting Started
+
 **1. Clone the repository**
  ```
  git clone https://github.com/hetshah13/Fastapi.git
@@ -31,6 +34,26 @@ These features are fed into a classification model to predict whether the bankno
 **2. Install dependencies**
   ```
   pip install -r requirements.txt
+```
+
+**3. Run the FastAPI server**
+```
+uvicorn app.main:app --reload
+```
+The server will start at http://127.0.0.1:8000/. And you can visit http://127.0.0.1:8000/docs to explore the interactive API documentation.
+
+
+**4. Example API Request**
+```
+curl -X 'POST' \
+  'http://127.0.0.1:8000/predict' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "variance": 2.0,
+  "skewness": 1.5,
+  "curtosis": 3.0,
+  "entropy": -1.5
+}'
 ```
   
 
