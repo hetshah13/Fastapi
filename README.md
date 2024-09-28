@@ -21,6 +21,17 @@ These features are fed into a classification model to predict whether the bankno
 **Method: GET**
   A simple root endpoint that returns a welcome message.
 
+## Getting Started
+**1. Clone the repository**
+ 
+ git clone https://github.com/hetshah13/Fastapi.git
+ 
+ cd Fastapi
+ 
+**2. Install dependencies**
+  
+  pip install -r requirements.txt
+  
 
 
 [Checkout Website](https://fastapi-niedaqrjy-het-shahs-projects-42ee3146.vercel.app)
